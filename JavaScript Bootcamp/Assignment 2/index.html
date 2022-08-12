@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .main {
+            height: 300px;
+            width: 300px;
+            display: flex;
+            text-align: center;
+        }
+
+        .object {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+
+        }
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 50px;
+
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="object"></div>
+    </div>
+    <div class="buttons">
+        <div>
+            <p>Button To Change Color</p>
+            <button id="button1">Button 1</button>
+        </div>
+        <div>
+            <p>Button To Change Size</p>
+            <button id="button2">Button 2</button>
+        </div>
+        <div>
+            <p>Button To Add Image</p>
+            <button id="button3">Button 3</button>
+        </div>
+        <div>
+            <p>Button To Remove Image</p>
+            <button id="button4">Button 4</button>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
