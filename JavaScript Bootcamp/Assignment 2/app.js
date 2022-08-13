@@ -12,11 +12,11 @@ const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
 const button4 = document.querySelector("#button4");
 
-button1.addEventListener("click", (event) => {
+button1.addEventListener("click", () => {
   div.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
 });
 
-button2.addEventListener("click", (event) => {
+button2.addEventListener("click", () => {
   console.log("helo");
   const randSize = sizes[Math.floor(Math.random() * sizes.length)];
   div.style.height = `${randSize.height}px`;
@@ -25,11 +25,11 @@ button2.addEventListener("click", (event) => {
   div.querySelector("img").style.width = `${randSize.width}px`;
 });
 
-button3.addEventListener("click", (event) => {
+button3.addEventListener("click", () => {
   div.innerHTML = `<img src="./cat.jpeg" alt="Cat Image">`;
   div.querySelector("img").style.height = `${div.clientHeight}px`;
   div.querySelector("img").style.width = `${div.clientWidth}px`;
 });
-button4.addEventListener("click", (event) => {
+button4.addEventListener("click", () => {
   div.innerHTML = "";
 });
